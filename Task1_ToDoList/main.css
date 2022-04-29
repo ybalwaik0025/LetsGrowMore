@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(bg.jpg);
+    width: 100%;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+}
+
+.header{
+    background: linear-gradient(black,rgb(188, 61, 165),black);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    background: linear-gradient(white, rgb(12, 236, 236), white);
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 600px;
+    border-radius: 10px;
+    height: 500px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.head{
+    padding: 2em;
+   
+}
+
+.head h2{
+    color: #000;
+    text-align: center;
+}
+
+.head h1{
+    color: #000;
+    text-align: center;
+}
+
+.list{
+    flex-grow: 1;
+    padding: 2em;
+    overflow-y: scroll;
+}
+
+.list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.list ul li i{
+    cursor: pointer;
+    color: #fb1713;
+    padding: 1em;
+}
+
+.list ul li i:hover{
+    background: #f1f1f1;
+}
+
+.add-task{
+    padding: 2em;
+    display: flex;
+}
+
+.add-task input{
+    border: 1px solid #EEE;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex-grow: 1;
+    padding: 1em;
+    outline: none;
+}
+
+.add-task input:hover{
+    border: 1px solid #DDD;
+}
+
+.add-task input:active{
+    border: 1px solid #CCC;
+}
+
+.add-task input:focus{
+    border: 1px solid #3498d3;
+
+}
+
+.add-task button{
+    outline: none;
+    border: none;
+    padding: 1em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #3498d3;
+    color: white;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #CCC;
+    border: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #566573;
+    border-radius: 10px;
+}
